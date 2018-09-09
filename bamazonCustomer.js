@@ -52,21 +52,24 @@ productList();
 function productList() {
     connection.query("SELECT * FROM products", function(err, response) {
         console.log(" Rock ID #  |         Rock Name          |           Department Name           | Price ($) / # In Stock ");
+        console.log("------------------------------------------------------------------------------------------------------");
         for (var i = 0; i < response.length; i++) {
         if (response[i]. item_id <= 9) {
-        console.log("------------------------------------------------------------------------------------------------------");
+        
             console.log(response[i].item_id + "           |"
             + response[i].product_name + " | " 
             + response[i].department_name + " | " 
             + response[i].price + " / " 
             + response[i].stock_quantity);
-        }else{
             console.log("------------------------------------------------------------------------------------------------------");
+        }else{
+            
             console.log(response[i].item_id + "          |"
             + response[i].product_name + " | " 
             + response[i].department_name + " | " 
             + response[i].price + " / " 
             + response[i].stock_quantity);
+            console.log("------------------------------------------------------------------------------------------------------");
         }
       };
       placeOrder(); 
@@ -103,9 +106,11 @@ function productList() {
                       );
                     var purchasedProd = answers.quantity.replace(/\s+/g,' ').trim();
                     var nameProd = response[0].product_name.replace(/\s+/g,' ').trim();
-                      console.log("Bamm-Bamm! Thank you for shopping with Bamm-Bamm Rubble! Your total for: " + purchasedProd + " " + nameProd + " is: $" + answers.quantity * response[0].price + ".")
+                      console.log("Bamm-Bamm! Thank you for shopping with Bamm-Bamm Rubble! Your total for: " + purchasedProd + " " + nameProd + " is: $" + answers.quantity * response[0].price + ".");
+                      console.log("Please press ctrl-c to exit.");
                   } else {
-                      console.log("Sorry, there are not enough of these rocks in stock to fill your order");
+                      console.log("Sorry, there are not enough of these rocks in stock to fill your order.");
+                      console.log("Please press ctrl-c to exit.");
                   };
   
               });
