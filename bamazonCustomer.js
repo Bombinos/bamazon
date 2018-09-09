@@ -20,6 +20,9 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
     if(err) throw err;
 
+console.log("                           Welcome to Bamm-Bammazon");
+console.log("                     The Official Rock Collector eShop of");
+console.log("                               Bamm-Bamm Rubble");
  
 var options = {
   fit:    'box',
