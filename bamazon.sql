@@ -24,16 +24,16 @@ CREATE TABLE products (
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES 
-(" Steak Rock                ", "Rocks that look like things        ", 10000, 1),
-(" 2 x 4 Lego Brick Rock     ", "Rocks that look like things        ", 100, 15),
+(" Bronto Burger Rock        ", "Rocks that look like things        ", 10000, 1),
+(" 2x4 Building Boulders Rock", "Rocks that look like things        ", 100, 15),
 (" Slinky Rock               ", "Rocks that look like things        ", 20, 5000),
 (" Chicken Nugget Rock       ", "Rocks that look like things        ", 10, 35),
+(" Bedrock                   ", "Rocks that don't look like things  ", 9301960, 2500),
 (" Petrified Wood            ", "Rocks that don't look like things  ", 10, 1000),
-(" Cinderella Stone          ", "Rocks that don't look like things  ", 40, 125),
 (" Dinosaur Poop Fossil      ", "Rocks that don't look like things  ", 50, 15),
 (" Pea Gravel Rock           ", "Rocks that don't look like things  ", 2, 1000),
-(" Lava Rock                 ", "Rocks that kind of look like things", 1000, 5),
-(" Ancient Finger Bone Fossil", "Rocks that kind of look like things", 2000, 5);
+(" Bowling Ball Rock         ", "Rocks that kind of look like things", 100, 10),
+(" Old Fruity Pebbles        ", "Rocks that kind of look like things", 2, 37);
 
 
 SELECT * FROM products;
