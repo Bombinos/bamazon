@@ -26,14 +26,15 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES 
 (" Bronto Burger Rock        ", "Rocks that look like things        ", 10000, 1),
 (" 2x4 Building Boulders Rock", "Rocks that look like things        ", 100, 15),
-(" Slinky Rock               ", "Rocks that look like things        ", 20, 5000),
-(" Chicken Nugget Rock       ", "Rocks that look like things        ", 10, 35),
+(" Couch Rock                ", "Rocks that look like things        ", 20, 5000),
+(" Cinderella Stone Book Rock", "Rocks that look like things        ", 20, 100),
 (" Bedrock                   ", "Rocks that don't look like things  ", 9301960, 2500),
-(" Petrified Wood            ", "Rocks that don't look like things  ", 10, 1000),
-(" Dinosaur Poop Fossil      ", "Rocks that don't look like things  ", 50, 15),
-(" Pea Gravel Rock           ", "Rocks that don't look like things  ", 2, 1000),
+(" Quarry Rock               ", "Rocks that don't look like things  ", 50, 15),
+(" Rock Vegas Rock           ", "Rocks that don't look like things  ", 2, 1000),
 (" Bowling Ball Rock         ", "Rocks that kind of look like things", 100, 10),
-(" Old Fruity Pebbles        ", "Rocks that kind of look like things", 2, 37);
+(" Old Fruity Pebbles        ", "Rocks that kind of look like things", 2, 37),
+(" Car Tire Rock             ", "Rocks that kind of look like things", 75, 100),
+(" Golf Club Head Rock       ", "Rocks that kind of look like things", 50, 50);
 
 
 SELECT * FROM products;

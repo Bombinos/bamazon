@@ -38,7 +38,7 @@ asciify('assets/images/bam-bam-rubble.png', options, function (err, asciified) {
 });
 });
 
-var delayInMilliseconds = 1000; 
+var delayInMilliseconds = 2000; 
 
 setTimeout(function() {
   
@@ -55,7 +55,7 @@ productList();
 function productList() {
     connection.query("SELECT * FROM products", function(err, response) {
         console.log(" Rock ID #  |         Rock Name          |           Department Name           | Price ($) / # In Stock ");
-        console.log("------------------------------------------------------------------------------------------------------");
+        console.log("-------------------------------------------------------------------------------------------------------");
         for (var i = 0; i < response.length; i++) {
         if (response[i]. item_id <= 9) {
         
@@ -64,7 +64,7 @@ function productList() {
             + response[i].department_name + " | " 
             + response[i].price + " / " 
             + response[i].stock_quantity);
-            console.log("------------------------------------------------------------------------------------------------------");
+            console.log("-------------------------------------------------------------------------------------------------------");
         }else{
             
             console.log(response[i].item_id + "          |"
@@ -72,7 +72,7 @@ function productList() {
             + response[i].department_name + " | " 
             + response[i].price + " / " 
             + response[i].stock_quantity);
-            console.log("------------------------------------------------------------------------------------------------------");
+            console.log("-------------------------------------------------------------------------------------------------------");
         }
       };
       placeOrder(); 
