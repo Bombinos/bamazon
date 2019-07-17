@@ -29,7 +29,6 @@ var options = {
   width:  100,
   height: 50
 }
- 
 asciify('assets/images/bam-bam-rubble.png', options, function (err, asciified) {
   if (err) throw err;
  
